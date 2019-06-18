@@ -1,0 +1,26 @@
+#ifndef _MESSAGE_DEFINITION_H_
+#define _MESSAGE_DEFINITION_H_
+
+// Penanda
+#define CON(x) "$," x ",\r\n"
+ 
+// ENCODER
+#define ENCODER_DATA          "[ED]"
+#define ENCODER_GET_DATA      "[EG]"
+#define ENCODER_START_RESET   "[ES]"
+#define ENCODER_READY         "[ER]"
+
+// MOTOR
+#define MOTOR_READY           "[MR]"
+#define MOTOR_SET_VELOCITY    "[MV]"
+#define MOTOR_SET_ANGLE       "[MA]"
+#define MOTOR_START_RESET     "[MS]"
+
+// MESSAGE FOR COMMAND(INFO) WITHOUT DATA
+#define MSG_ENCODER_GET_DATA		  CON(ENCODER_GET_DATA)
+#define MSG_ENCODER_START_RESET		CON(ENCODER_START_RESET)
+#define MSG_ENCODER_READY			    CON(ENCODER_READY)
+#define MSG_MOTOR_READY				    CON(MOTOR_READY)
+#define MSG_MOTOR_START_RESET		  CON(MOTOR_START_RESET)
+
+#endif
